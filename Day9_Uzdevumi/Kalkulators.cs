@@ -12,21 +12,16 @@ namespace Day9_Uzdevumi
         {
 
             int izvele = 1;
+
+            
             while (izvele != 0)
             {
-
                 Console.WriteLine("1: Saskaita 2: Atnem 3: Reizina 4: Dala 5: Kapina (0: Iziet)");
                 izvele = Convert.ToInt16(Console.ReadLine());
 
-                
-                    Console.WriteLine("Ievadiet 1. skaitli!");
-                      double pirmais = Convert.ToInt16(Console.ReadLine());
 
-                    Console.WriteLine("Ievadiet 2. skaitli!");
-                     double otrais = Convert.ToInt16(Console.ReadLine());
                 
-                
-                
+
 
                 switch (izvele)
                 {
@@ -35,23 +30,57 @@ namespace Day9_Uzdevumi
                         break;
 
                     case 1:
+                        Console.WriteLine("Ievadiet 1. skaitli!");
+                        double pirmais = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Ievadiet 2. skaitli!");
+                        double otrais = Convert.ToDouble(Console.ReadLine());
+
                         Console.WriteLine(Saskaita(pirmais, otrais));
 
                         break;
                     case 2:
-                        Console.WriteLine(Atnem(pirmais, otrais));
+
+                        Console.WriteLine("Ievadiet 1. skaitli!");
+                        double pirmais1 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Ievadiet 2. skaitli!");
+                        double otrais2 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(Atnem(pirmais1, otrais2));
 
                         break;
 
                     case 3:
-                        Console.WriteLine(Reizina(pirmais, otrais));
+                        Console.WriteLine("Ievadiet 1. skaitli!");
+                        double pirmais3 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Ievadiet 2. skaitli!");
+
+                        double otrais3 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(Reizina(pirmais3, otrais3));
 
                         break;
                     case 4:
-                        Console.WriteLine(Dala(pirmais, otrais));
+
+                        Console.WriteLine("Ievadiet 1. skaitli!");
+                        double pirmais4 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Ievadiet 2. skaitli!");
+                        double otrais4 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(Dala(pirmais4, otrais4));
                         break;
                     case 5:
-                        Console.WriteLine(Kapina(pirmais, otrais));
+
+                        Console.WriteLine("Ievadiet 1. skaitli!");
+                        double pirmais5 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Ievadiet 2. skaitli!");
+                        double otrais5 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(Kapina(pirmais5, otrais5));
 
                         break;
 
